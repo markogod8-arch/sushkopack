@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Order | SUSHKO PACKAGING</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .whatsapp-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 999;
+      background: #25D366; color: white; width: 60px; height: 60px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    }
+    .lang-btn.active { background: #0f766e; color: white; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <div class="bg-teal-800 text-white text-sm py-2">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <div class="flex gap-4">
+        <span><i class="fas fa-map-marker-alt mr-1"></i> Butwal, Nepal</span>
+        <span class="hidden sm:inline"><i class="fas fa-phone mr-1"></i> +977 9867187555</span>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="setLang('en')" id="btn-en" class="lang-btn px-3 py-1 rounded text-xs font-medium active">English</button>
+        <button onclick="setLang('ne')" id="btn-ne" class="lang-btn px-3 py-1 rounded text-xs font-medium bg-teal-700">नेपाली</button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-10 h-10 bg-gradient-to-br from-teal-600 to-teal-800 rounded-lg flex items-center justify-center text-white font-bold text-lg">HS</div>
+          <div>
+            <div class="font-bold text-lg text-teal-900 leading-tight">SUSHKO PACKAGING</div>
+            <div class="text-xs text-gray-500 -mt-0.5">Packaging Solutions</div>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="font-medium text-gray-600 hover:text-teal-700">Home</a>
+          <a href="products.html" class="font-medium text-gray-600 hover:text-teal-700">Products</a>
+          <a href="about.html" class="font-medium text-gray-600 hover:text-teal-700">About Us</a>
+          <a href="contact.html" class="font-medium text-teal-700">Contact</a>
+          <a href="contact.html" class="bg-teal-700 text-white px-5 py-2 rounded-lg font-medium hover:bg-teal-800">Order Now</a>
+        </div>
+        <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-4 space-y-3">
+      <a href="index.html" class="block">Home</a>
+      <a href="products.html" class="block">Products</a>
+      <a href="about.html" class="block">About Us</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </nav>
+
+  <section class="bg-teal-800 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-3" data-en="Contact & Order" data-ne="सम्पर्क र अर्डर">Contact & Order</h1>
+      <p class="text-teal-100" data-en="Get in touch for quotes, bulk orders or any enquiry" data-ne="कोट, थोक अर्डर वा कुनै सोधपुछका लागि सम्पर्क गर्नुहोस्">Get in touch for quotes, bulk orders or any enquiry</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+
+      <!-- Contact Info -->
+      <div>
+        <h2 class="text-2xl font-bold mb-6" data-en="Get In Touch" data-ne="सम्पर्क गर्नुहोस्">Get In Touch</h2>
+        
+        <div class="space-y-5">
+          <div class="flex items-start gap-4 bg-white p-5 rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 text-xl flex-shrink-0">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <div class="font-semibold">WhatsApp (Fastest)</div>
+              <a href="https://wa.me/9779867187555" class="text-teal-700 font-medium text-lg hover:underline">+977 9867187555</a>
+              <p class="text-sm text-gray-500 mt-1" data-en="Message us anytime for quick response" data-ne="छिटो प्रतिक्रियाका लागि जुनसुकै बेला सन्देश पठाउनुहोस्">Message us anytime for quick response</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 bg-white p-5 rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 text-xl flex-shrink-0">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <div class="font-semibold">Phone</div>
+              <div class="text-teal-700 font-medium text-lg">+977 9867187555</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 bg-white p-5 rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600 text-xl flex-shrink-0">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <div class="font-semibold">Location</div>
+              <div class="text-gray-700">Butwal, Nepal</div>
+              <p class="text-sm text-gray-500 mt-1" data-en="Exact address will be updated soon" data-ne="ठ्याक्कै ठेगाना चाँडै अपडेट गरिनेछ">Exact address will be updated soon</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 bg-white p-5 rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl flex-shrink-0">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <div class="font-semibold">Email</div>
+              <div class="text-gray-500 text-sm" data-en="Coming soon" data-ne="चाँडै आउँदैछ">Coming soon</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <a href="https://wa.me/9779867187555?text=Hello%20SUSHKO%20PACKAGING%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 rounded-xl flex items-center justify-center gap-3 text-lg transition">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span data-en="Chat on WhatsApp Now" data-ne="अहिले व्हाट्सएपमा कुरा गर्नुहोस्">Chat on WhatsApp Now</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Enquiry Form -->
+      <div class="bg-white rounded-2xl shadow-sm p-8">
+        <h2 class="text-2xl font-bold mb-2" data-en="Send Enquiry / Order Request" data-ne="सोधपुछ / अर्डर अनुरोध पठाउनुहोस्">Send Enquiry / Order Request</h2>
+        <p class="text-gray-500 text-sm mb-6" data-en="Fill the form and we will contact you soon" data-ne="फारम भर्नुहोस् र हामी चाँडै सम्पर्क गर्नेछौं">Fill the form and we will contact you soon</p>
+
+        <form id="enquiry-form" onsubmit="submitForm(event)" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Name / नाम *</label>
+            <input type="text" required name="name" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none" placeholder="Your full name">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Phone / फोन *</label>
+            <input type="tel" required name="phone" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none" placeholder="+977 98XXXXXXXX">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Business Type (optional)</label>
+            <select name="business" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none">
+              <option value="">Select...</option>
+              <option>Hotel / Restaurant</option>
+              <option>Cafe</option>
+              <option>Shop / Retail</option>
+              <option>Home / Individual</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Products Interested In *</label>
+            <textarea required name="products" rows="3" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none" placeholder="e.g. Paper cups 500 pcs, Aluminum containers, Plastic bags..."></textarea>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Message (optional)</label>
+            <textarea name="message" rows="2" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none" placeholder="Any special requirements..."></textarea>
+          </div>
+          <button type="submit" class="w-full bg-teal-700 hover:bg-teal-800 text-white font-semibold py-3 rounded-lg transition">
+            <span data-en="Send Enquiry via WhatsApp" data-ne="व्हाट्सएप मार्फत पठाउनुहोस्">Send Enquiry via WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+      <p>© 2026 SUSHKO PACKAGING • Butwal, Nepal • +977 9867187555</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/9779867187555" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp text-3xl"></i></a>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-ne').classList.toggle('active', lang === 'ne');
+      localStorage.setItem('lang', lang);
+    }
+    const saved = localStorage.getItem('lang') || 'en';
+    setLang(saved);
+
+    function submitForm(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = form.name.value;
+      const phone = form.phone.value;
+      const business = form.business.value || 'Not specified';
+      const products = form.products.value;
+      const message = form.message.value || '';
+
+      const text = `Hello HOT AND SOFT PACK,%0A%0A*New Enquiry*%0A%0AName: ${name}%0APhone: ${phone}%0ABusiness: ${business}%0AProducts: ${products}%0AMessage: ${message}`;
+      window.open(`https://wa.me/9779867187555?text=${text}`, '_blank');
+    }
+  </script>
+</body>
+</html>

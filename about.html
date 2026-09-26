@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | SUSHKO PACKAGING</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .whatsapp-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 999;
+      background: #25D366; color: white; width: 60px; height: 60px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    }
+    .lang-btn.active { background: #0f766e; color: white; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <div class="bg-teal-800 text-white text-sm py-2">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <div class="flex gap-4">
+        <span><i class="fas fa-map-marker-alt mr-1"></i> Butwal, Nepal</span>
+        <span class="hidden sm:inline"><i class="fas fa-phone mr-1"></i> +977 9867187555</span>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="setLang('en')" id="btn-en" class="lang-btn px-3 py-1 rounded text-xs font-medium active">English</button>
+        <button onclick="setLang('ne')" id="btn-ne" class="lang-btn px-3 py-1 rounded text-xs font-medium bg-teal-700">नेपाली</button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-10 h-10 bg-gradient-to-br from-teal-600 to-teal-800 rounded-lg flex items-center justify-center text-white font-bold text-lg">HS</div>
+          <div>
+            <div class="font-bold text-lg text-teal-900 leading-tight">SUSHKO PACKAGING</div>
+            <div class="text-xs text-gray-500 -mt-0.5">Packaging Solutions</div>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="font-medium text-gray-600 hover:text-teal-700">Home</a>
+          <a href="products.html" class="font-medium text-gray-600 hover:text-teal-700">Products</a>
+          <a href="about.html" class="font-medium text-teal-700">About Us</a>
+          <a href="contact.html" class="font-medium text-gray-600 hover:text-teal-700">Contact</a>
+          <a href="contact.html" class="bg-teal-700 text-white px-5 py-2 rounded-lg font-medium hover:bg-teal-800">Order Now</a>
+        </div>
+        <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-4 space-y-3">
+      <a href="index.html" class="block">Home</a>
+      <a href="products.html" class="block">Products</a>
+      <a href="about.html" class="block">About Us</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </nav>
+
+  <section class="bg-teal-800 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-3" data-en="About SUSHKO PACKAGING" data-ne="SUSHKO PACKAGING को बारेमा">About SUSHKO PACKAGING</h1>
+      <p class="text-teal-100" data-en="Your reliable packaging partner in Butwal" data-ne="बुटवलमा तपाईंको भरपर्दो प्याकेजिङ साझेदार">Your reliable packaging partner in Butwal</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-white rounded-2xl shadow-sm p-8 md:p-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6" data-en="Our Story" data-ne="हाम्रो कथा">Our Story</h2>
+        <p class="text-gray-600 leading-relaxed mb-6" data-en="SUSHKO PACKAGING was founded in 2026 in Butwal, Nepal. We are a trading company specializing in high-quality packaging products for food service, retail, hotels, restaurants, cafes, and households." data-ne="SUSHKO PACKAGING को स्थापना २०२६ मा बुटवल, नेपालमा भएको हो। हामी खाद्य सेवा, खुद्रा, होटल, रेस्टुरेन्ट, क्याफे र घरपरिवारका लागि उच्च गुणस्तरीय प्याकेजिङ उत्पादनहरूमा विशेषज्ञता राख्ने ट्रेडिङ कम्पनी हौं।">
+          SUSHKO PACKAGING was founded in 2026 in Butwal, Nepal. We are a trading company specializing in high-quality packaging products for food service, retail, hotels, restaurants, cafes, and households.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-6" data-en="We import selected products and also source locally to ensure consistent supply, competitive prices, and the best quality for our customers in Butwal." data-ne="हामी चयनित उत्पादनहरू आयात गर्छौं र स्थानीय स्रोतबाट पनि ल्याउँछौं जसले बुटवलका हाम्रा ग्राहकहरूलाई निरन्तर आपूर्ति, प्रतिस्पर्धी मूल्य र उत्कृष्ट गुणस्तर सुनिश्चित गर्छ।">
+          We import selected products and also source locally to ensure consistent supply, competitive prices, and the best quality for our customers in Butwal.
+        </p>
+        <p class="text-gray-600 leading-relaxed" data-en="Whether you need paper cups for your cafe, takeaway containers for your restaurant, or bags for your shop — we are here to supply everything you need, in any quantity." data-ne="तपाईंलाई क्याफेका लागि पेपर कप, रेस्टुरेन्टका लागि टेकअवे कन्टेनर वा पसलका लागि झोला चाहिएको होस् — हामी तपाईंलाई चाहिने सबै कुरा, कुनै पनि मात्रामा आपूर्ति गर्न यहाँ छौं।">
+          Whether you need paper cups for your cafe, takeaway containers for your restaurant, or bags for your shop — we are here to supply everything you need, in any quantity.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-10">
+        <div class="bg-white p-6 rounded-xl text-center shadow-sm">
+          <div class="text-3xl font-bold text-teal-700">2026</div>
+          <div class="text-sm text-gray-500 mt-1" data-en="Founded" data-ne="स्थापना वर्ष">Founded</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl text-center shadow-sm">
+          <div class="text-3xl font-bold text-teal-700">100+</div>
+          <div class="text-sm text-gray-500 mt-1" data-en="Products" data-ne="उत्पादनहरू">Products</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl text-center shadow-sm">
+          <div class="text-3xl font-bold text-teal-700">Butwal</div>
+          <div class="text-sm text-gray-500 mt-1" data-en="Service Area" data-ne="सेवा क्षेत्र">Service Area</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+      <p>© 2026 SUSHKO PACKAGING • Butwal, Nepal • +977 9867187555</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/9779867187555" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp text-3xl"></i></a>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-ne').classList.toggle('active', lang === 'ne');
+      localStorage.setItem('lang', lang);
+    }
+    const saved = localStorage.getItem('lang') || 'en';
+    setLang(saved);
+  </script>
+</body>
+</html>

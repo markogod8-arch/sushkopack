@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUSHKO PACKAGING | Packaging Solutions in Butwal, Nepal</title>
+  <meta name="description" content="SUSHKO PACKAGING - Quality packaging products for hotels, restaurants, shops and homes in Butwal. Paper, plastic, aluminum, bags and more.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .whatsapp-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 999;
+      background: #25D366; color: white; width: 60px; height: 60px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: all 0.3s;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 25px rgba(37,211,102,0.5); }
+    .lang-btn.active { background: #0f766e; color: white; }
+    .product-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Top Bar -->
+  <div class="bg-teal-800 text-white text-sm py-2">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <div class="flex gap-4">
+        <span><i class="fas fa-map-marker-alt mr-1"></i> Butwal, Nepal</span>
+        <span class="hidden sm:inline"><i class="fas fa-phone mr-1"></i> +977 9867187555</span>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="setLang('en')" id="btn-en" class="lang-btn px-3 py-1 rounded text-xs font-medium active">English</button>
+        <button onclick="setLang('ne')" id="btn-ne" class="lang-btn px-3 py-1 rounded text-xs font-medium bg-teal-700 hover:bg-teal-600">नेपाली</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-10 h-10 bg-gradient-to-br from-teal-600 to-teal-800 rounded-lg flex items-center justify-center text-white font-bold text-lg">HS</div>
+          <div>
+            <div class="font-bold text-lg text-teal-900 leading-tight">SUSHKO PACKAGING</div>
+            <div class="text-xs text-gray-500 -mt-0.5">Packaging Solutions</div>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="font-medium text-teal-700 hover:text-teal-900" data-en="Home" data-ne="होम">Home</a>
+          <a href="products.html" class="font-medium text-gray-600 hover:text-teal-700" data-en="Products" data-ne="उत्पादनहरू">Products</a>
+          <a href="about.html" class="font-medium text-gray-600 hover:text-teal-700" data-en="About Us" data-ne="हाम्रो बारे">About Us</a>
+          <a href="contact.html" class="font-medium text-gray-600 hover:text-teal-700" data-en="Contact" data-ne="सम्पर्क">Contact</a>
+          <a href="contact.html" class="bg-teal-700 text-white px-5 py-2 rounded-lg font-medium hover:bg-teal-800 transition" data-en="Order Now" data-ne="अर्डर गर्नुहोस्">Order Now</a>
+        </div>
+        <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-4 space-y-3">
+      <a href="index.html" class="block font-medium">Home</a>
+      <a href="products.html" class="block font-medium">Products</a>
+      <a href="about.html" class="block font-medium">About Us</a>
+      <a href="contact.html" class="block font-medium">Contact</a>
+      <a href="contact.html" class="block bg-teal-700 text-white text-center py-2 rounded-lg">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-teal-800 via-teal-700 to-teal-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="inline-block bg-teal-600/40 text-teal-100 text-sm font-medium px-3 py-1 rounded-full mb-4">
+          <span data-en="Trusted Packaging Supplier in Butwal" data-ne="बुटवलको भरपर्दो प्याकेजिङ आपूर्तिकर्ता">Trusted Packaging Supplier in Butwal</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-5">
+          <span data-en="Quality Packaging" data-ne="गुणस्तरीय प्याकेजिङ">Quality Packaging</span><br>
+          <span class="text-teal-200" data-en="for Every Business" data-ne="हरेक व्यवसायका लागि">for Every Business</span>
+        </h1>
+        <p class="text-teal-100 text-lg mb-8 max-w-lg" data-en="We supply paper, plastic, aluminum, bags, tissue and eco-friendly packaging products to hotels, restaurants, shops and homes across Butwal." data-ne="हामी बुटवलभरिका होटल, रेस्टुरेन्ट, पसल र घरहरूमा कागज, प्लास्टिक, एल्युमिनियम, झोला, टिस्यु र इको-फ्रेन्डली प्याकेजिङ उत्पादनहरू आपूर्ति गर्छौं।">
+          We supply paper, plastic, aluminum, bags, tissue and eco-friendly packaging products to hotels, restaurants, shops and homes across Butwal.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="products.html" class="bg-white text-teal-800 font-semibold px-6 py-3 rounded-lg hover:bg-teal-50 transition" data-en="View Catalogue" data-ne="क्याटलग हेर्नुहोस्">View Catalogue</a>
+          <a href="https://wa.me/9779867187555" target="_blank" class="border-2 border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/10 transition flex items-center gap-2">
+            <i class="fab fa-whatsapp text-xl"></i> <span data-en="WhatsApp Us" data-ne="व्हाट्सएप गर्नुहोस्">WhatsApp Us</span>
+          </a>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-8 border border-white/20">
+          <div class="grid grid-cols-2 gap-6 text-center">
+            <div>
+              <div class="text-4xl font-bold">100+</div>
+              <div class="text-teal-200 text-sm mt-1" data-en="Products" data-ne="उत्पादनहरू">Products</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold">B2B + B2C</div>
+              <div class="text-teal-200 text-sm mt-1" data-en="Customers" data-ne="ग्राहकहरू">Customers</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold">2026</div>
+              <div class="text-teal-200 text-sm mt-1" data-en="Founded" data-ne="स्थापना">Founded</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold">Butwal</div>
+              <div class="text-teal-200 text-sm mt-1" data-en="Based in" data-ne="आधारित">Based in</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-3" data-en="Our Product Categories" data-ne="हाम्रा उत्पादन श्रेणीहरू">Our Product Categories</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto" data-en="Wide range of quality packaging solutions for food service, retail and everyday use." data-ne="खाद्य सेवा, खुद्रा र दैनिक प्रयोगका लागि गुणस्तरीय प्याकेजिङ समाधानहरूको विस्तृत श्रृंखला।">Wide range of quality packaging solutions for food service, retail and everyday use.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Category cards -->
+        <a href="products.html#paper" class="product-card bg-gray-50 rounded-xl p-6 text-center transition duration-300 border border-gray-100 hover:border-teal-200">
+          <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-teal-700"><i class="fas fa-box"></i></div>
+          <h3 class="font-semibold text-gray-900" data-en="Paper Products" data-ne="कागजका उत्पादनहरू">Paper Products</h3>
+          <p class="text-sm text-gray-500 mt-1" data-en="Cups, bags, boxes, plates" data-ne="कप, झोला, बाकस, प्लेट">Cups, bags, boxes, plates</p>
+        </a>
+        <a href="products.html#plastic" class="product-card bg-gray-50 rounded-xl p-6 text-center transition duration-300 border border-gray-100 hover:border-teal-200">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-blue-700"><i class="fas fa-wine-bottle"></i></div>
+          <h3 class="font-semibold text-gray-900" data-en="Plastic Packaging" data-ne="प्लास्टिक प्याकेजिङ">Plastic Packaging</h3>
+          <p class="text-sm text-gray-500 mt-1" data-en="Containers, cups, lids" data-ne="कन्टेनर, कप, ढक्कन">Containers, cups, lids</p>
+        </a>
+        <a href="products.html#aluminum" class="product-card bg-gray-50 rounded-xl p-6 text-center transition duration-300 border border-gray-100 hover:border-teal-200">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-amber-700"><i class="fas fa-utensils"></i></div>
+          <h3 class="font-semibold text-gray-900" data-en="Aluminum Foil" data-ne="एल्युमिनियम फोइल">Aluminum Foil</h3>
+          <p class="text-sm text-gray-500 mt-1" data-en="Containers, foil rolls" data-ne="कन्टेनर, फोइल रोल">Containers, foil rolls</p>
+        </a>
+        <a href="products.html#bags" class="product-card bg-gray-50 rounded-xl p-6 text-center transition duration-300 border border-gray-100 hover:border-teal-200">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-green-700"><i class="fas fa-shopping-bag"></i></div>
+          <h3 class="font-semibold text-gray-900" data-en="Bags & Pouches" data-ne="झोला र पाउच">Bags & Pouches</h3>
+          <p class="text-sm text-gray-500 mt-1" data-en="Paper, plastic, non-woven" data-ne="कागज, प्लास्टिक, नन-वोभन">Paper, plastic, non-woven</p>
+        </a>
+        <a href="products.html#tissue" class="product-card bg-gray-50 rounded-xl p-6 text-center transition duration-300 border border-gray-100 hover:border-teal-200">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-purple-700"><i class="fas fa-toilet-paper"></i></div>
+          <h3 class="font-semibold text-gray-900" data-en="Tissue & Hygiene" data-ne="टिस्यु र स्वच्छता">Tissue & Hygiene</h3>
+          <p class="text-sm text-gray-500 mt-1" data-en="Napkins, tissues, gloves" data-ne="नेपकिन, टिस्यु, पन्जा">Napkins, tissues, gloves</p>
+        </a>
+        <a href="products.html#eco" class="product-card bg-gray-50 rounded-xl p-6 text-center transition duration-300 border border-gray-100 hover:border-teal-200">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-emerald-700"><i class="fas fa-leaf"></i></div>
+          <h3 class="font-semibold text-gray-900" data-en="Eco-Friendly" data-ne="इको-फ्रेन्डली">Eco-Friendly</h3>
+          <p class="text-sm text-gray-500 mt-1" data-en="Biodegradable options" data-ne="बायोडिग्रेडेबल विकल्पहरू">Biodegradable options</p>
+        </a>
+        <a href="products.html#cutlery" class="product-card bg-gray-50 rounded-xl p-6 text-center transition duration-300 border border-gray-100 hover:border-teal-200">
+          <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-rose-700"><i class="fas fa-spoon"></i></div>
+          <h3 class="font-semibold text-gray-900" data-en="Cutlery & Accessories" data-ne="चम्चा र सामानहरू">Cutlery & Accessories</h3>
+          <p class="text-sm text-gray-500 mt-1" data-en="Spoons, forks, straws" data-ne="चम्चा, काँटा, स्ट्र">Spoons, forks, straws</p>
+        </a>
+        <a href="products.html" class="product-card bg-teal-50 rounded-xl p-6 text-center transition duration-300 border border-teal-100 hover:border-teal-300">
+          <div class="w-16 h-16 bg-teal-200 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-teal-800"><i class="fas fa-th"></i></div>
+          <h3 class="font-semibold text-teal-900" data-en="View All Products" data-ne="सबै उत्पादन हेर्नुहोस्">View All Products</h3>
+          <p class="text-sm text-teal-600 mt-1" data-en="100+ items available" data-ne="१००+ वस्तु उपलब्ध">100+ items available</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-3" data-en="Why Choose SUSHKO PACKAGING?" data-ne="किन SUSHKO PACKAGING छान्ने?">Why Choose SUSHKO PACKAGING?</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-sm">
+          <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 text-xl mb-4"><i class="fas fa-truck"></i></div>
+          <h3 class="font-bold text-lg mb-2" data-en="Reliable Supply" data-ne="भरपर्दो आपूर्ति">Reliable Supply</h3>
+          <p class="text-gray-600 text-sm" data-en="Import + local sourcing so you always get the products you need on time." data-ne="आयात + स्थानीय स्रोतबाट तपाईंलाई समयमै आवश्यक उत्पादनहरू उपलब्ध गराउँछौं।">Import + local sourcing so you always get the products you need on time.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm">
+          <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 text-xl mb-4"><i class="fas fa-tags"></i></div>
+          <h3 class="font-bold text-lg mb-2" data-en="Competitive Prices" data-ne="प्रतिस्पर्धी मूल्य">Competitive Prices</h3>
+          <p class="text-gray-600 text-sm" data-en="Best rates for both bulk (B2B) and retail (B2C) customers in Butwal." data-ne="बुटवलमा थोक (B2B) र खुद्रा (B2C) दुवै ग्राहकका लागि उत्कृष्ट दरहरू।">Best rates for both bulk (B2B) and retail (B2C) customers in Butwal.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm">
+          <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 text-xl mb-4"><i class="fas fa-headset"></i></div>
+          <h3 class="font-bold text-lg mb-2" data-en="Easy Ordering" data-ne="सजिलो अर्डर">Easy Ordering</h3>
+          <p class="text-gray-600 text-sm" data-en="Order via website, WhatsApp or call. Fast response and flexible quantities." data-ne="वेबसाइट, व्हाट्सएप वा कलमार्फत अर्डर गर्नुहोस्। छिटो प्रतिक्रिया र लचिलो मात्रा।">Order via website, WhatsApp or call. Fast response and flexible quantities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-teal-800 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4" data-en="Ready to Order Packaging?" data-ne="प्याकेजिङ अर्डर गर्न तयार हुनुहुन्छ?">Ready to Order Packaging?</h2>
+      <p class="text-teal-100 mb-8 text-lg" data-en="Contact us today for the best prices and quality packaging products in Butwal." data-ne="बुटवलमा उत्कृष्ट मूल्य र गुणस्तरीय प्याकेजिङ उत्पादनहरूका लागि आज नै सम्पर्क गर्नुहोस्।">Contact us today for the best prices and quality packaging products in Butwal.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://wa.me/9779867187555?text=Hello%2C%20I%20want%20to%20order%20packaging%20products" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded-lg flex items-center gap-2 transition">
+          <i class="fab fa-whatsapp text-xl"></i> WhatsApp: +977 9867187555
+        </a>
+        <a href="contact.html" class="bg-white text-teal-800 font-semibold px-8 py-3 rounded-lg hover:bg-teal-50 transition" data-en="Send Enquiry" data-ne="सोधपुछ पठाउनुहोस्">Send Enquiry</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-9 h-9 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold">HS</div>
+          <span class="font-bold text-white">SUSHKO PACKAGING</span>
+        </div>
+        <p class="text-sm text-gray-400" data-en="Your trusted packaging partner in Butwal, Nepal. Quality products for every need." data-ne="बुटवल, नेपालमा तपाईंको भरपर्दो प्याकेजिङ साझेदार। हरेक आवश्यकताका लागि गुणस्तरीय उत्पादनहरू।">Your trusted packaging partner in Butwal, Nepal. Quality products for every need.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3" data-en="Quick Links" data-ne="द्रुत लिङ्कहरू">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-teal-400">Home</a></li>
+          <li><a href="products.html" class="hover:text-teal-400">Products</a></li>
+          <li><a href="about.html" class="hover:text-teal-400">About Us</a></li>
+          <li><a href="contact.html" class="hover:text-teal-400">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3" data-en="Products" data-ne="उत्पादनहरू">Products</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Paper Products</li>
+          <li>Plastic Packaging</li>
+          <li>Aluminum Foil</li>
+          <li>Bags & Tissue</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3" data-en="Contact" data-ne="सम्पर्क">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li><i class="fas fa-map-marker-alt mr-2 text-teal-500"></i> Butwal, Nepal</li>
+          <li><i class="fas fa-phone mr-2 text-teal-500"></i> +977 9867187555</li>
+          <li><i class="fab fa-whatsapp mr-2 text-teal-500"></i> WhatsApp Available</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-10 pt-6 border-t border-gray-800 text-center text-sm text-gray-500">
+      © 2026 SUSHKO Packaging. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/9779867187555" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-3xl"></i>
+  </a>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-ne').classList.toggle('active', lang === 'ne');
+      localStorage.setItem('lang', lang);
+    }
+    // Load saved language
+    const saved = localStorage.getItem('lang') || 'en';
+    setLang(saved);
+  </script>
+</body>
+</html>

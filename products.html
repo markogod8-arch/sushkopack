@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Catalogue | SUSHKO PACKAGING</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .whatsapp-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 999;
+      background: #25D366; color: white; width: 60px; height: 60px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
+    .product-img { width: 100%; height: 170px; object-fit: contain; background: #f8fafc; padding: 12px; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Top Bar -->
+  <div class="bg-teal-800 text-white text-sm py-2">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <div class="flex gap-4">
+        <span><i class="fas fa-map-marker-alt mr-1"></i> Butwal, Nepal</span>
+        <span class="hidden sm:inline"><i class="fas fa-phone mr-1"></i> +977 9867187555</span>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="setLang('en')" id="btn-en" class="px-3 py-1 rounded text-xs font-medium bg-teal-600">English</button>
+        <button onclick="setLang('ne')" id="btn-ne" class="px-3 py-1 rounded text-xs font-medium bg-teal-700">नेपाली</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="newlogo.png" alt="Sushko Logo" class="h-10 w-auto rounded-lg">
+          <div>
+            <div class="font-bold text-lg text-teal-900 leading-tight">SUSHKO PACKAGING</div>
+            <div class="text-xs text-gray-500 -mt-0.5">Packaging Solutions</div>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="font-medium text-gray-600 hover:text-teal-700">Home</a>
+          <a href="products.html" class="font-medium text-teal-700">Products</a>
+          <a href="about.html" class="font-medium text-gray-600 hover:text-teal-700">About Us</a>
+          <a href="contact.html" class="font-medium text-gray-600 hover:text-teal-700">Contact</a>
+          <a href="contact.html" class="bg-teal-700 text-white px-5 py-2 rounded-lg font-medium">Order Now</a>
+        </div>
+        <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-4 space-y-3">
+      <a href="index.html" class="block">Home</a>
+      <a href="products.html" class="block">Products</a>
+      <a href="about.html" class="block">About Us</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="bg-teal-800 text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">Product Catalogue</h1>
+      <p class="text-teal-100">Quality packaging for hotels, restaurants, shops & homes in Butwal</p>
+    </div>
+  </section>
+
+  <!-- Filter -->
+  <div class="bg-white border-b sticky top-16 z-40">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap gap-2 overflow-x-auto text-sm">
+      <a href="#paper" class="px-4 py-1.5 rounded-full bg-teal-700 text-white font-medium">Paper</a>
+      <a href="#plastic" class="px-4 py-1.5 rounded-full bg-gray-100">Plastic</a>
+      <a href="#aluminum" class="px-4 py-1.5 rounded-full bg-gray-100">Aluminum</a>
+      <a href="#bags" class="px-4 py-1.5 rounded-full bg-gray-100">Bags</a>
+      <a href="#plates" class="px-4 py-1.5 rounded-full bg-gray-100">Plates & Bowls</a>
+      <a href="#others" class="px-4 py-1.5 rounded-full bg-gray-100">Others</a>
+    </div>
+  </div>
+
+  <section class="py-10">
+    <div class="max-w-7xl mx-auto px-4 space-y-12">
+
+      <!-- Paper -->
+      <div id="paper">
+        <h2 class="text-2xl font-bold mb-5 flex items-center gap-2"><i class="fas fa-box text-teal-600"></i> Paper Products</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <img src=<img src="Paper-cup.jpg" alt="Paper Cups" class="product-img zoom-img" onerror="...">
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Paper Cups (8oz / 12oz / 16oz)</h3>
+              <p class="text-xs text-gray-500 mt-1">Hot & cold drinks</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Paper%20Cups" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <img src="kraft-box.jpg" alt="Kraft Box" class="product-img" onerror="this.src='https://placehold.co/300x200/fef3c7/d97706?text=Kraft+Box'">
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Kraft Takeaway Box</h3>
+              <p class="text-xs text-gray-500 mt-1">With clear window</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Kraft%20Takeaway%20Box" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <img src="paper-plates.jpg" alt="Paper Plates" class="product-img" onerror="this.src='https://placehold.co/300x200/f8fafc/64748b?text=Plates'">
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Paper Plates & Bowls</h3>
+              <p class="text-xs text-gray-500 mt-1">Disposable</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Paper%20Plates" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-amber-600 bg-amber-50"><i class="fas fa-box-open"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Food Boxes (Burger / Noodle)</h3>
+              <p class="text-xs text-gray-500 mt-1">Takeaway boxes</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Food%20Boxes" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Plastic -->
+      <div id="plastic">
+        <h2 class="text-2xl font-bold mb-5 flex items-center gap-2"><i class="fas fa-wine-bottle text-blue-600"></i> Plastic Packaging</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <img src="clear-container.jpg" alt="Plastic Container" class="product-img" onerror="this.src='https://placehold.co/300x200/e0f2fe/0284c7?text=Container'">
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">PP Containers with Lid</h3>
+              <p class="text-xs text-gray-500 mt-1">Round clear containers</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20PP%20Containers" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-blue-600 bg-blue-50"><i class="fas fa-glass-water"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">PET Clear Cups + Lids</h3>
+              <p class="text-xs text-gray-500 mt-1">Juice & smoothie cups</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20PET%20Cups" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-blue-600 bg-blue-50"><i class="fas fa-layer-group"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Hinged Clamshell Boxes</h3>
+              <p class="text-xs text-gray-500 mt-1">Salad / Burger boxes</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Clamshell%20Boxes" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-blue-600 bg-blue-50"><i class="fas fa-cube"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Sauce Cups / Dip Containers</h3>
+              <p class="text-xs text-gray-500 mt-1">Small portion cups</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Sauce%20Cups" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- aluminum -->
+      <div id="aluminum">
+        <h2 class="text-2xl font-bold mb-5 flex items-center gap-2"><i class="fas fa-utensils text-amber-600"></i> Aluminum Products</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <img src="aluminum-containers.jpg" alt="aluminum Containers" class="product-img" onerror="this.src='https://placehold.co/300x200/f1f5f9/64748b?text=Aluminum'">
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Aluminum Foil Containers</h3>
+              <p class="text-xs text-gray-500 mt-1">Various sizes</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Aluminum%20Containers" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-gray-600 bg-gray-100"><i class="fas fa-scroll"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Aluminum Foil Rolls</h3>
+              <p class="text-xs text-gray-500 mt-1">Kitchen & commercial</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Aluminum%20Foil%20Rolls" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bags -->
+      <div id="bags">
+        <h2 class="text-2xl font-bold mb-5 flex items-center gap-2"><i class="fas fa-shopping-bag text-green-600"></i> Bags</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <img src="paper-bags.jpg" alt="Kraft Bags" class="product-img" onerror="this.src='https://placehold.co/300x200/ecfdf5/059669?text=Kraft+Bags'">
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Kraft Paper Bags</h3>
+              <p class="text-xs text-gray-500 mt-1">With handles</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Kraft%20Paper%20Bags" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-green-600 bg-green-50"><i class="fas fa-bag-shopping"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Non-Woven Carry Bags</h3>
+              <p class="text-xs text-gray-500 mt-1">Reusable bags</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Non-Woven%20Bags" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-green-600 bg-green-50"><i class="fas fa-shirt"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">T-Shirt Plastic Bags</h3>
+              <p class="text-xs text-gray-500 mt-1">Standard carry bags</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20T-Shirt%20Bags" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Others -->
+      <div id="others">
+        <h2 class="text-2xl font-bold mb-5 flex items-center gap-2"><i class="fas fa-ellipsis-h text-purple-600"></i> Other Products</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-purple-600 bg-purple-50"><i class="fas fa-toilet-paper"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Tissue & Napkins</h3>
+              <p class="text-xs text-gray-500 mt-1">Table napkins</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Tissue%20Napkins" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-purple-600 bg-purple-50"><i class="fas fa-hands"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Disposable Gloves</h3>
+              <p class="text-xs text-gray-500 mt-1">Food handling</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Gloves" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-rose-600 bg-rose-50"><i class="fas fa-utensils"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Cutlery (Spoon/Fork)</h3>
+              <p class="text-xs text-gray-500 mt-1">Plastic / Wooden</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Cutlery" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+          <div class="product-card bg-white rounded-xl overflow-hidden border transition">
+            <div class="product-img flex items-center justify-center text-4xl text-rose-600 bg-rose-50"><i class="fas fa-straw"></i></div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm">Straws</h3>
+              <p class="text-xs text-gray-500 mt-1">Paper & Plastic</p>
+              <a href="https://wa.me/9779867187555?text=I%20want%20Straws" class="mt-2 inline-block text-teal-700 text-xs font-medium">Enquire →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center bg-teal-50 rounded-2xl p-8">
+        <p class="text-gray-700 mb-4 font-medium">Need bulk order or other products?</p>
+        <a href="https://wa.me/9779867187555" target="_blank" class="inline-flex items-center gap-2 bg-green-500 text-white font-semibold px-6 py-3 rounded-lg">
+          <i class="fab fa-whatsapp"></i> WhatsApp: +977 9867187555
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+      <p>© 2026 SUSHKO PACKAGING • Butwal, Nepal • +977 9867187555</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/9779867187555" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp text-3xl"></i></a>
+
+  <script>
+    function setLang(lang) {
+      // simple placeholder for language
+      localStorage.setItem('lang', lang);
+    }
+  </script>
+</body>
+</html>
